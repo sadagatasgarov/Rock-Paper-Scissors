@@ -19,11 +19,7 @@ function computerPlay(x){
 //computerPlay();
 
 function playRound(playerSelection,computerSelection){
-(playerSelection == 'Rock'||computerSelection=='Paper')?alert("komputer uddu"):(playerSelection == 'Paper'||computerSelection=='Rock')?alert("kullanici qalib oldu"):"Berebere";
-
-(playerSelection == 'Scrissors'||computerSelection=='Rock')?alert("komputer uddu"):(playerSelection == 'Rock'||computerSelection=='Scrissors')?alert("kullanici qalib oldu"):"Berabere";
-
-(playerSelection == 'Paper'||computerSelection=='Scrissors')?alert("komputer uddu"):(playerSelection == 'Scrissors'||computerSelection=='Paper')?alert("kullanici qalib oldu"):"berabere";
+(playerSelection == 'Rock'||computerSelection=='Paper')?alert("komputer uddu"):(playerSelection == 'Paper'||computerSelection=='Rock')?alert("kullanici qalib oldu"):(playerSelection == 'Scrissors'||computerSelection=='Rock')?alert("komputer uddu"):(playerSelection == 'Rock'||computerSelection=='Scrissors')?alert("kullanici qalib oldu"):(playerSelection == 'Paper'||computerSelection=='Scrissors')?alert("komputer uddu"):(playerSelection == 'Scrissors'||computerSelection=='Paper')?alert("kullanici qalib oldu"):"berabere";
 }
 const playerSelection=prompt('Rock, Paper or Scrissors?');
 const computerSelection=computerPlay();
