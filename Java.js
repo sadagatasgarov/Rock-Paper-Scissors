@@ -53,7 +53,7 @@ alert("Bir daha yoxlayin");
           else if (computerSelection=='Scissors') {
               alert('You win!');
         }
-          else {alert('Meglub  oldunuz');}
+          else {alert('You lose!');}
     }
 }
 
