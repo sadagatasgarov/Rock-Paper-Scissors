@@ -23,12 +23,7 @@ let rounds=0;
 let playerRound=0;
 let computerRound=0;
 function playRound(playerSelection,computerSelection){
-/*()=> playerSelection=='Scissors',computerSelection=='Paper'?alert('You win!'):computerSelection=='Rock'?alert('You lose!'):computerSelection=='Scissors'?alert("Esitlik"):
-playerSelection=='Paper',computerSelection=='Rock'?alert('You win!'):computerSelection=='Scissors'?alert('You lose!'):computerSelection=='Paper'?alert("Esitlik"):
-playerSelection=='Rock',computerSelection=='Scissors'?alert('You win!'):computerSelection=='Paper'?alert('You win!'):computerSelection=='Rock'?alert("Esitlik"):
-alert("Bir daha yoxlayin");
-}*/
-//playRound();
+
 
     if (playerSelection=='Scissors') {
         if(computerSelection=='Scissors') {
@@ -71,15 +66,9 @@ alert("Bir daha yoxlayin");
               computerRound+=1;
             }
     }
-//playRound(playerSelection,computerSelection);
+
 }
 
-
-//(playerSelection == 'Rock')?computerSelection=='Paper' alert("komputer uddu"):alert("kullanici qalib oldu");
-//(playerSelection == 'Scissors',computerSelection=='Rock')alert("komputer uddu"):alert("kullanici qalib oldu");
-//(playerSelection == 'Paper',computerSelection=='Scissors')?alert("komputer uddu"):alert("kullanici qalib oldu");
-
-//const playerSelection=prompt();
 const computerSelection=computerPlay();
 function game(){
     for (rounds=0; rounds <= 5; rounds++) {
