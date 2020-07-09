@@ -24,7 +24,6 @@ let playerRound=0;
 let computerRound=0;
 function playRound(playerSelection,computerSelection){
 
-
     if (playerSelection=='Scissors') {
         if(computerSelection=='Scissors') {
           alert('Noone won');
@@ -66,25 +65,32 @@ function playRound(playerSelection,computerSelection){
               computerRound+=1;
             }
     }
+    else{
+        alert('Please enter: Rock, Paper, Scissors');
+    }
 
+    return 
 }
 
-const computerSelection=computerPlay();
 function game(){
     for (rounds=0; rounds <= 5; rounds++) {
     //const x = array[rounds]; 
-    const playerSelection = prompt();
-playRound(playerSelection,computerSelection);
-alert(`Oyuncu-${playerSelection}, Komputer-${computerSelection}`);
+    const computerSelection=computerPlay();
+    const playerSelection = prompt('Please enter: Rock, Paper, Scissors');
+    playRound(playerSelection,computerSelection);
+    alert(`Oyuncu-${playerSelection}, Komputer-${computerSelection}`);
+    alert(`Kullanici ${playerRound}, Komputer ${computerRound}`);
 
 }
 
 if(playerRound>computerRound){
-    alert(`Kullanici ${playerRound}, Computer ${computerRound}`);
+    alert(`Kullanici kazandi: Kullanici ${playerRound}, Computer ${computerRound}`);
 }
-else {
-    alert(`Kullanici ${playerRound}, Computer ${computerRound}`);
+else if (playerRound<computerRound) {
+    alert(`Bilgisayar kazandi: Kullanici ${playerRound}, Computer ${computerRound}`);
 }
-
+else{
+    alert('berabere');
+}
 }
 game();
