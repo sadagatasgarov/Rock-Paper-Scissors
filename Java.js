@@ -12,8 +12,8 @@ function computerPlay(x){
        return 'Paper';
     }
     else {
-       // alert('qayci');
-       return 'Qayci';
+       // alert('Scrissors');
+       return 'Scrissors';
     }
 }
 //computerPlay();
@@ -21,10 +21,10 @@ function computerPlay(x){
 function playRound(playerSelection,computerSelection){
 (playerSelection == 'Rock'||computerSelection=='Paper')?alert("komputer uddu"):(playerSelection == 'Paper'||computerSelection=='Rock')?alert("kullanici qalib oldu"):"Berebere";
 
-(playerSelection == 'Qayci'||computerSelection=='Rock')?alert("komputer uddu"):(playerSelection == 'Rock'||computerSelection=='Qayci')?alert("kullanici qalib oldu"):"Berabere";
+(playerSelection == 'Scrissors'||computerSelection=='Rock')?alert("komputer uddu"):(playerSelection == 'Rock'||computerSelection=='Scrissors')?alert("kullanici qalib oldu"):"Berabere";
 
-(playerSelection == 'Paper'||computerSelection=='Qayci')?alert("komputer uddu"):(playerSelection == 'Qayci'||computerSelection=='Paper')?alert("kullanici qalib oldu"):"berabere";
+(playerSelection == 'Paper'||computerSelection=='Scrissors')?alert("komputer uddu"):(playerSelection == 'Scrissors'||computerSelection=='Paper')?alert("kullanici qalib oldu"):"berabere";
 }
-const playerSelection=prompt();
+const playerSelection=prompt('Rock, Paper or Scrissors?');
 const computerSelection=computerPlay();
 alert(playRound(playerSelection,computerSelection));
