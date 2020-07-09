@@ -13,53 +13,53 @@ function computerPlay(){
        return 'Paper';
     }
     else {
-       // alert('qayci');
-       return 'Qayci';
+       // alert('Scissors');
+       return 'Scissors';
     }
 }
 
 //computerPlay();
 
 function playRound(playerSelection,computerSelection){
-/*()=> playerSelection=='Qayci',computerSelection=='Paper'?alert('Qalib oldunuz'):computerSelection=='Rock'?alert('Meglub oldunuz'):computerSelection=='Qayci'?alert("Esitlik"):
-playerSelection=='Paper',computerSelection=='Rock'?alert('Qalib oldunuz'):computerSelection=='Qayci'?alert('meglub oldunuz'):computerSelection=='Paper'?alert("Esitlik"):
-playerSelection=='Rock',computerSelection=='Qayci'?alert('Qalib oldunuz'):computerSelection=='Paper'?alert('Qalib oldunuz'):computerSelection=='Rock'?alert("Esitlik"):
+/*()=> playerSelection=='Scissors',computerSelection=='Paper'?alert('You win!'):computerSelection=='Rock'?alert('You lose!'):computerSelection=='Scissors'?alert("Esitlik"):
+playerSelection=='Paper',computerSelection=='Rock'?alert('You win!'):computerSelection=='Scissors'?alert('You lose!'):computerSelection=='Paper'?alert("Esitlik"):
+playerSelection=='Rock',computerSelection=='Scissors'?alert('You win!'):computerSelection=='Paper'?alert('You win!'):computerSelection=='Rock'?alert("Esitlik"):
 alert("Bir daha yoxlayin");
 }*/
 //playRound();
 
-    if (playerSelection=='Qayci') {
-        if(computerSelection=='Qayci') {
-          alert('Bir daha sinayin');
+    if (playerSelection=='Scissors') {
+        if(computerSelection=='Scissors') {
+          alert('Noone won');
             }
             else if (computerSelection=='Paper') {
-                alert('Qalib oldunuz');
+                alert('You win!');
             }
-            else { alert('Meglub oldunuz');}
+            else { alert('You lose!');}
     }
     else if(playerSelection=='Paper'){
         if(computerSelection=='Paper') {
-            alert('Bir daha sinayin');
+            alert('Noone won');
             }
               else if (computerSelection=='Rock') {
-                  alert('Qalib oldunuz');
+                  alert('You win!');
                 }
-              else { alert('Meglub oldunuz');}  
+              else { alert('You lose!');}  
     }
     else if (playerSelection=='Rock') {
         if (computerSelection=='Rock') {
-            alert('Bir daha sinayin');
+            alert('Noone won');
         }
-          else if (computerSelection=='Qayci') {
-              alert('Qalib oldunuz');
+          else if (computerSelection=='Scissors') {
+              alert('You win!');
         }
           else {alert('Meglub  oldunuz');}
     }
 }
 
 //(playerSelection == 'Rock')?computerSelection=='Paper' alert("komputer uddu"):alert("kullanici qalib oldu");
-//(playerSelection == 'Qayci',computerSelection=='Rock')alert("komputer uddu"):alert("kullanici qalib oldu");
-//(playerSelection == 'Paper',computerSelection=='Qayci')?alert("komputer uddu"):alert("kullanici qalib oldu");
+//(playerSelection == 'Scissors',computerSelection=='Rock')alert("komputer uddu"):alert("kullanici qalib oldu");
+//(playerSelection == 'Paper',computerSelection=='Scissors')?alert("komputer uddu"):alert("kullanici qalib oldu");
 
 const playerSelection=prompt();
 const computerSelection=computerPlay();
